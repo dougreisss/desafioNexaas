@@ -1,0 +1,17 @@
+C:\Users\Dougl\OneDrive\Documentos\Estudo\Desafio Nexaas\Ecommerce\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Dougl\OneDrive\Documentos\Estudo\Desafio Nexaas\Ecommerce\Infrastructure\obj\Debug\net5.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dougl\OneDrive\Documentos\Estudo\Desafio Nexaas\Ecommerce\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Dougl\OneDrive\Documentos\Estudo\Desafio Nexaas\Ecommerce\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfo.cs
+C:\Users\Dougl\OneDrive\Documentos\Estudo\Desafio Nexaas\Ecommerce\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Dougl\OneDrive\Documentos\Estudo\Desafio Nexaas\Ecommerce\Infrastructure\bin\Debug\net5.0\Infrastructure.deps.json
+C:\Users\Dougl\OneDrive\Documentos\Estudo\Desafio Nexaas\Ecommerce\Infrastructure\bin\Debug\net5.0\Infrastructure.dll
+C:\Users\Dougl\OneDrive\Documentos\Estudo\Desafio Nexaas\Ecommerce\Infrastructure\bin\Debug\net5.0\ref\Infrastructure.dll
+C:\Users\Dougl\OneDrive\Documentos\Estudo\Desafio Nexaas\Ecommerce\Infrastructure\bin\Debug\net5.0\Infrastructure.pdb
+C:\Users\Dougl\OneDrive\Documentos\Estudo\Desafio Nexaas\Ecommerce\Infrastructure\bin\Debug\net5.0\Domain.dll
+C:\Users\Dougl\OneDrive\Documentos\Estudo\Desafio Nexaas\Ecommerce\Infrastructure\bin\Debug\net5.0\Entity.dll
+C:\Users\Dougl\OneDrive\Documentos\Estudo\Desafio Nexaas\Ecommerce\Infrastructure\bin\Debug\net5.0\Domain.pdb
+C:\Users\Dougl\OneDrive\Documentos\Estudo\Desafio Nexaas\Ecommerce\Infrastructure\bin\Debug\net5.0\Entity.pdb
+C:\Users\Dougl\OneDrive\Documentos\Estudo\Desafio Nexaas\Ecommerce\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.CopyComplete
+C:\Users\Dougl\OneDrive\Documentos\Estudo\Desafio Nexaas\Ecommerce\Infrastructure\obj\Debug\net5.0\Infrastructure.dll
+C:\Users\Dougl\OneDrive\Documentos\Estudo\Desafio Nexaas\Ecommerce\Infrastructure\obj\Debug\net5.0\ref\Infrastructure.dll
+C:\Users\Dougl\OneDrive\Documentos\Estudo\Desafio Nexaas\Ecommerce\Infrastructure\obj\Debug\net5.0\Infrastructure.pdb
