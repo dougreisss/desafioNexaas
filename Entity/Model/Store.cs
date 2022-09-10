@@ -9,7 +9,7 @@ namespace Entity.Model
     public class Store
     {
         public int StoreId { get; set; }
-        public int StoreName { get; set; }
-        public int StoreAdress { get; set; }
+        public string StoreName { get; set; }
+        public string StoreAdress { get; set; }
     }
 }

@@ -1,6 +1,8 @@
 using Application.Application;
 using Application.Interface;
 using Domain.Interface;
+using Domain.Interface.Service;
+using Domain.Service;
 using Infrastructure.Config;
 using Infrastructure.Config.Interface;
 using Infrastructure.Repository;
@@ -41,12 +43,21 @@ namespace WebApi
 
             //application
             services.AddSingleton<IProductApplication, ProductApplication>();
+            services.AddSingleton<IStoreApplication, StoreApplication>();
+            services.AddSingleton<IStockItemApplication, StockItemApplication>();
 
-            //helper
-            services.AddSingleton<IDbConfig, DbConfig>();
+            //domain
+            services.AddSingleton<IProductService, ProductService>();
+            services.AddSingleton<IStoreService, StoreService>();
+            services.AddSingleton<IStockItemService, StockItemService>();
 
             // repository
             services.AddSingleton<IProduct, ProductRepository>();
+            services.AddSingleton<IStore, StoreRepository>();
+            services.AddSingleton<IStockItem, StockItemRepository>();
+
+            //helper
+            services.AddSingleton<IDbConfig, DbConfig>();
 
         }
 

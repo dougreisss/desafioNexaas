@@ -19,29 +19,33 @@ namespace Infrastructure.Config
         {
             _configuration = configuration;
         }
-        public SqlDataReader ExecuteStoredProcedureWithParameters(string procedureName, Dictionary<string, object> parameters)
+        public DataTable ExecuteReader(string procedureName, Dictionary<string, object> parameters)
         {
             try
             {
+                var dt = new DataTable();
+
                 using (SqlConnection con = new SqlConnection(GetConnectionString()))
                 {
 
-                    using (SqlCommand cmd = new SqlCommand(procedureName, con))
+                    using (SqlDataAdapter cmd = new SqlDataAdapter(procedureName, con))
                     {
-                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.SelectCommand.CommandType = CommandType.StoredProcedure;
 
                         if (parameters != null)
                         {
                             foreach (KeyValuePair<string, object> kvp in parameters)
                             { 
-                                cmd.Parameters.Add(new SqlParameter(kvp.Key, kvp.Value));
+                                cmd.SelectCommand.Parameters.Add(new SqlParameter(kvp.Key, kvp.Value));
                             }
                         }
 
                         con.Open();
-                        var reader = cmd.ExecuteReader();
+
+                        cmd.Fill(dt);
+
                         con.Close();
-                        return reader;
+                        return dt;
                     }
                 }
             }
@@ -51,7 +55,7 @@ namespace Infrastructure.Config
             }
         }
 
-        public void ExecuteStoredProcedure(string procedureName, Dictionary<string, object> parameters)
+        public void ExecuteNonQuery(string procedureName, Dictionary<string, object> parameters)
         {
             try
             {

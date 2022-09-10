@@ -1,4 +1,4 @@
-﻿using Entity.Enums;
+﻿using Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +10,8 @@ namespace Application.Interface
     public interface IProductApplication
     {
         public Product ProductById(int productId);
+        public bool InsertProduct(Product product);
+        public bool UpdateProduct(Product product);
+        public bool DeleteProduct(int productId);
     }
 }

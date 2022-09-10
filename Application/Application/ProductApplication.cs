@@ -1,6 +1,7 @@
 ﻿using Application.Interface;
 using Domain.Interface;
-using Entity.Enums;
+using Domain.Interface.Service;
+using Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,16 +13,31 @@ namespace Application.Application
     public class ProductApplication : IProductApplication
     {
 
-        private readonly IProduct _product;
+        private readonly IProductService _productService;
 
-        public ProductApplication(IProduct product)
+        public ProductApplication(IProductService productService)
         {
-            _product = product;
+            _productService = productService;
+        }
+
+        public bool DeleteProduct(int productId)
+        {
+            return _productService.DeleteProduct(productId);
+        }
+
+        public bool InsertProduct(Product product)
+        {
+            return _productService.InsertProduct(product);
         }
 
         public Product ProductById(int productId)
         {
-            return _product.ProductById(productId);
+            return _productService.ProductById(productId);
+        }
+
+        public bool UpdateProduct(Product product)
+        {
+            return _productService.UpdateProduct(product);
         }
     }
 }

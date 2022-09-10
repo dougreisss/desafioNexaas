@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace Infrastructure.Config.Interface
     public interface IDbConfig
     {
         public string GetConnectionString();
-        public SqlDataReader ExecuteStoredProcedureWithParameters(string procedureName, Dictionary<string, object> parameters);
-        public void ExecuteStoredProcedure(string procedureName, Dictionary<string, object> parameters);
+        public DataTable ExecuteReader(string procedureName, Dictionary<string, object> parameters);
+        public void ExecuteNonQuery(string procedureName, Dictionary<string, object> parameters);
     }
 }
